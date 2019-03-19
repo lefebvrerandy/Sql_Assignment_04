@@ -430,7 +430,7 @@ namespace Sql_Assignment_04
         private void LoadXAxisTitles()
         {
             // Set the AxisX Title
-            chart_main.ChartAreas["ChartArea1"].AxisX.Title = "Month";
+            chart_main.ChartAreas["ChartArea1"].AxisX.Title = "Months - 2008";
 
             // Set the angle of the lettering
             chart_main.ChartAreas[0].AxisX.LabelStyle.Angle = -90;
