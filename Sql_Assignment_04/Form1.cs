@@ -250,7 +250,7 @@ namespace Sql_Assignment_04
                 // to add extra lines to the command line.
                 if ((product == "All") && (productClass == "All") && (city == "All"))
                 {
-                    cmd.CommandText = "SELECT * FROM sales_fact_1998";
+                    cmd.CommandText = "SELECT * FROM sales_fact_1998"; 
                     //// Main title
                     chart_main.Titles.Add("All Sales");
                 }
