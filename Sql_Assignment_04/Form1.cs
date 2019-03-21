@@ -116,6 +116,7 @@ namespace Sql_Assignment_04
                     PopulateComboProduct(productID);
                 }
                 reader.Close();
+                cmd.Dispose();
             }
             UpdateGraph();
         }
@@ -143,6 +144,7 @@ namespace Sql_Assignment_04
                     cb_Class.Items.Add(reader["product_subcategory"].ToString());
                 }
                 reader.Close();
+                cmd.Dispose();
             }
         }
 
@@ -181,6 +183,7 @@ namespace Sql_Assignment_04
                         cb_Product.Items.Add(reader["product_name"].ToString());
                     }
                     reader.Close();
+                    cmd.Dispose();
                 }
             }
             else
@@ -209,6 +212,7 @@ namespace Sql_Assignment_04
                     cb_City.Items.Add(reader["store_city"].ToString());
                 }
                 reader.Close();
+                cmd.Dispose();
             }
         }
 
@@ -235,7 +239,7 @@ namespace Sql_Assignment_04
             {
 
 
-                SqlCommand cmd = new SqlCommand();
+                //SqlCommand cmd = new SqlCommand();
                 db.Open();
                 cmd.Connection = db;
 
@@ -404,6 +408,7 @@ namespace Sql_Assignment_04
                     }
                 }
                 reader.Close();
+                cmd.Dispose();
 
                 // This is where we make the calls to LoadMonthlySales() which puts the plots on the
                 // graph. We used Linq to compound the total of each list when sending it to the method
